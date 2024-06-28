@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#app {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-сontainer{
+    width: 60%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #e6dddc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(199, 198, 197,0.50);
+}
+
+.registration-сontainer{
+    width: 60%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #e6dddc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(199, 198, 197,0.50);
+}
+
+.form-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.container-imglog{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+:root {
+    --primary: #ff9500;
+    --secondary: #fcf951;
+    --white: #fff;
+    --gray: #9b9b9b;
+  }
+  
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 80%;
+  }
+
+  .form2__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 30px;
+    width: 80%;
+  }
+
+  .form-log {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .form-reg {
+    width: 90%;
+    padding-left: 8%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Три столбца с одинаковой шириной */
+    grid-column-gap: 20px; /* Расстояние между столбцами */
+    grid-row-gap: 10px; /* Расстояние между строками */
+  }
+
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--gray);
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--gray);
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--primary);
+    font-weight: 700;    
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, var(--primary), var(--secondary));
+    border-image-slice: 1;
+  }
+  
+
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+  
+  .button {
+    width: 80%;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: var(--primary); /* основной цвет кнопки */
+    color: #fff; /* цвет текста кнопки */
+  }
+  
+  .button:hover {
+    background-color: #f5c134; /* изменение цвета при наведении */
+  }
+  
+  .button:focus {
+    outline: none; /* убираем фокусовую рамку при нажатии */
+  }
+
+  input[type="date"] {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-top: 20px;
+    padding-left: 15px;
+  }
+  
+
+  input[type="date"]:focus {
+    border-color: #f5c134;
+  }
+  
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    -webkit-appearance: none;
+    display: none;
+  }
+
+  #date{
+    font-size: 21px;
+  }
+
+  #gender{
+    font-size: 21px;
+  }
+
+#radio2{
+  margin-left: 20px;
+}
+
+.form_radio label{
+  font-size: 21px;
+  margin-top: 20px;
+}
+
+.form_radio{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.button2 {
+  width: 80%;
+  margin-top: 40px;
+  margin-left: 50%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--primary); /* основной цвет кнопки */
+  color: #fff; /* цвет текста кнопки */
+}
+
+.button2:hover {
+  background-color: #f5c134; /* изменение цвета при наведении */
+}
+
+.button2:focus {
+  outline: none; /* убираем фокусовую рамку при нажатии */
+}
+
+.form_radio input[type="radio"] {
+  margin-right: 5px;
+  /* Скрыть оригинальную радио-кнопку */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Стили для кастомных радио-кнопок */
+.form_radio input[type="radio"]::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ccc; /* Цвет рамки */
+  border-radius: 50%; /* Круглая форма */
+  margin-right: 5px;
+}
+
+/* Стили для активной (выбранной) радио-кнопки */
+.form_radio input[type="radio"]:checked::before {
+  background-color: #f5c134; /* Цвет заливки при выборе */
+}

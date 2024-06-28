@@ -1,0 +1,203 @@
+.admin-panel-page-container {
+  width: 100vw;
+  height: 100vh;
+}
+.admin-panel-container {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #e6dddc;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 0px rgba(199, 198, 197, 0.50);
+  background-color: #fff;
+  margin-top: 5%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  position: relative;
+  background-color: white;
+}
+
+.tabs button::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: transparent;
+  transition: width 0.3s, background-color 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.tabs button.active::after {
+  width: 100%;
+  background: #ff9500;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.tags-tab,
+.events-tab,
+.users-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tags-tab ul,
+.events-tab ul,
+.users-tab ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tags-tab li,
+.events-tab li,
+.users-tab li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.tags-tab button,
+.events-tab button,
+.users-tab button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9500;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.tags-tab button:hover,
+.events-tab button:hover,
+.users-tab button:hover {
+  background-color: #f5c134;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--gray);
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 700;    
+}
+
+.form__field:focus {
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, var(--primary), var(--secondary));
+  border-image-slice: 1;
+}
+
+
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+.tag_ul{
+  height: 350px;
+  overflow-y:scroll;
+}
+
+.tag_ul::-webkit-scrollbar{
+  display: none;
+}
+
+.des_ul{
+  height: 180px;
+  overflow-y:scroll;
+}
+
+.des_ul::-webkit-scrollbar{
+  display: none;
+}
+.us_ul{
+  height: 470px;
+  overflow-y:scroll;
+}
+
+.us_ul::-webkit-scrollbar{
+  display: none;
+}
+
+.users-tab li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.users-tab li span {
+  flex: 1;
+}
+
+.users-tab li select {
+  margin-left: 10px;
+  margin-right: 10px;
+}

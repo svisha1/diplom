@@ -1,0 +1,20 @@
+.input-search {
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 5px; /* Скругление углов */
+    font-size: 16px; /* Размер шрифта */
+    width: 200px; /* Ширина поля */
+    outline: none; /* Убираем рамку фокуса */
+    height: 10px;
+    margin-left: 20px;
+  }
+  
+  .input-search:focus {
+    border-color: #f5c134; /* Цвет рамки при фокусе */
+  }
+
+  #img2{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+  }

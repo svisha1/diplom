@@ -1,0 +1,47 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .recommended-capsules
+  {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    margin-left: 8%;
+  }
+ 
+  .recommended-users {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .capsule-cards,
+  .profile-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .capsule-cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      column-gap: 90px;
+      row-gap: 40px;
+    }
+    
+    .profile-cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  

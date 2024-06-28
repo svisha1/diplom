@@ -1,0 +1,78 @@
+header {
+    background-color: #1f1e1e; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина 100% экрана */
+    position: fixed; /* Зафиксировать в верхней части экрана */
+    top: 0; /* Прикрепить к верхней границе экрана */
+    z-index: 1000; /* Установить z-index, чтобы header находился выше других элементов */
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    padding-left: 10%;
+  }
+  
+  h1 {
+    margin: 0; /* Убираем отступы у заголовка */
+  }
+  
+  nav ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы у списка */
+  }
+  
+  nav ul li {
+    display: inline; /* Располагаем элементы списка в одну линию */
+    margin-right: 20px; /* Отступ между элементами списка */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* У последнего элемента списка нет правого отступа */
+  }
+  
+  nav ul li a {
+    color: #fff; /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+  }
+
+
+  #img1_header{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+  }
+
+  #img2_header{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#img3_header{
+  width: 40px;
+  height: 40px;
+    margin-left: 5vw;
+    border-radius: 50%;
+
+}
+
+.a3{
+  width: 40px;
+  height: 40px;
+}
+
+.notification {
+  position: fixed;
+  top: 261px;
+  left: 39%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  padding: 10px;
+  z-index: 1000;
+  width: 300px;
+  height: 400px;
+  color: black;
+}

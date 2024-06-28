@@ -1,0 +1,203 @@
+.profilePage-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-page {
+    width: 80%;
+    padding: 20px 0px;
+    padding-left: 5%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 35px;
+    margin-left: 8%;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid #ccc;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-info h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.user-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.profile-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.edit-profile-button,
+.create-capsule-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff9500;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.edit-profile-button:hover,
+.create-capsule-button:hover {
+    background-color: #f5c134;
+}
+
+
+.profile-capsules {
+    margin-top: 40px;
+}
+
+.profile-capsules h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.capsules-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.capsule-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.capsule-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.capsule-card .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.capsule-card .userName,
+.capsule-card .teg {
+    font-size: 1rem;
+    color: #666;
+}
+
+.capsule-card .a-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.capsule-card .a-container a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.capsule-card .a-container a:hover {
+    color: #0056b3;
+}
+
+
+.profile-header .user-stats {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.profile-header .user-stats a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.profile-header .user-stats a:hover {
+    text-decoration: underline;
+}
+
+.profile-tabs {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;
+    background-color: #f9f9f9;
+}
+
+.tab-button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    transition: width 0.3s, background-color 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.tab-button.active::after {
+    width: 100%;
+    background: #ff9500;
+}
+
+
+.profile-content {
+    margin-top: 20px;
+}
+
+.capsules-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%; /* Устанавливаем ширину контейнера */
+    height: 430px;
+    margin-left: -30px;
+}
+
+.capsules-container::-webkit-scrollbar {
+    display: none;
+}

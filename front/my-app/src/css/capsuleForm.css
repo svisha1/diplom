@@ -1,0 +1,269 @@
+.capsuleFormPage-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.capsuleForm-container{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e6dddc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(199, 198, 197,0.50);
+    margin-left: 20%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    overflow-y: hidden;
+}
+
+.capsule-form {
+    width: 80%;
+    display: grid;
+    grid-template-rows: 6fr;
+    grid-auto-flow: row;
+    padding: 50px 50px;
+    padding-left: 150px;
+}
+
+.capsuleForm-container::-webkit-scrollbar,
+.capsule-form::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --primary: #ff9500;
+    --secondary: #fcf951;
+    --white: #fff;
+    --gray: #9b9b9b;
+  }
+  
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 80%;
+  }
+
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--gray);
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--gray);
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--primary);
+    font-weight: 700;    
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, var(--primary), var(--secondary));
+    border-image-slice: 1;
+  }
+  
+
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+  .basic-multi-select {
+    margin-top: 15px;
+}
+
+
+  .button_capsuleForm {
+    width: 80%;
+    height: 40px;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: var(--primary); /* основной цвет кнопки */
+    color: #fff; /* цвет текста кнопки */
+  }
+  
+  .button_capsuleForm:hover {
+    background-color: #f5c134; /* изменение цвета при наведении */
+  }
+  
+  .button_capsuleForm:focus {
+    outline: none; /* убираем фокусовую рамку при нажатии */
+  }
+
+  .image-previews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-preview {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.image-preview button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-link-button, .remove-link-button {
+    padding: 5px;
+    background-color: #ff9500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+
+.add-link-button:hover, .remove-link-button:hover {
+    background-color: #f5c134;
+}
+
+.remove-link-button {
+    margin-bottom: 3px;
+    background-color: #FF0000;
+}
+
+.remove-link-button:hover {
+    background-color: #CC0000;
+}
+
+.link-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.link-inputs .input-field {
+    flex: 1;
+}
+
+.link-inputs .remove-button {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.link-input{
+    padding: 5px;
+}
+
+.link-input:focus{
+    border: 1px #f5c134 solid;
+}
+
+.links-container {
+  max-height: 80px; /* Укажите желаемую высоту контейнера для прокрутки */
+  overflow-y: auto; /* Добавляем возможность прокрутки */
+  margin-top: 10px;
+}
+
+.links-container::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-file-upload {
+  padding: 5px;
+  background-color: #ff9500;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+
+.custom-file-upload:hover {
+  background-color: #f5c134;
+}
+
+.input-none{
+  display: none;
+}
+
+.image-previews {
+  height: 90px;
+  display: flex;
+  overflow-x: auto; /* Горизонтальная прокрутка */
+  white-space: nowrap; /* Разрешение горизонтальной прокрутки для дочерних элементов */
+}
+
+.image-previews::-webkit-scrollbar {
+  display: none;
+}

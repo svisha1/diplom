@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.capsule-page{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1.5fr 0.5fr;
+}
+
+.grid2{
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery-container {
+    margin-top: 5%;
+    width: 50%;
+    height: 100%;
+    /*background: linear-gradient(to top, #fbad7f9e, #cdccc8, white);*/
+}
+
+.info-container{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.a_username{
+    display:flex;
+    padding: 5px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffa040;  /* Цвет фона */
+    color: black;  /* Цвет текста */
+    text-decoration: none;  /* Убираем подчеркивание */
+    border-radius: 12px;  /* Скругленные углы */
+    transition: background-color 0.3s;  /* Плавный переход цвета фона */
+}
+
+.a_username:hover {
+    background-color: #ffdf3c;  /* Цвет фона при наведении */
+}
+
+.h1_name{
+    margin-top: 10px;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.description-title, .links-title, .comments-title {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+
+.description {
+    width: 70%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.links-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.link-item {
+    margin-bottom: 10px;
+}
+
+.link-name {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.link-item a {
+    font-size: 1.1rem;
+    display: block;
+    color: #ffa040;
+    text-decoration: none;
+    transition: color 0.3s;
+    word-break: break-word;
+}
+
+.link-item a:hover {
+    color: #feba77;
+}
+
+.comments-title {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-left: 4%;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 4%;
+    width: 92.3%;
+}
+
+.username-input,
+.comment-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: black;
+    background-color: #ffa040;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-button:hover {
+    background-color: #feba77;
+}
+
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 4%;
+    width: 92.3%;
+    margin-bottom: 10px;
+    max-height: 300px; /* Ограничиваем высоту контейнера */
+    overflow-y: auto; /* Добавляем прокрутку */
+}
+
+.comment {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-username {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.comment-text {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.comment-date {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #656565;
+}
+
+
+.likes{
+    margin-left: 8%;
+    font-size: 21px;
+}
+
+
+.like-button {
+    background-color: transparent; /* Прозрачный фон */
+    cursor: pointer;
+    border: none;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+
+.save-button {
+    padding: 5px 10px;
+    background-color: transparent; /* Прозрачный фон */
+    color: #ffa040; /* Цвет текста */
+    border: 2px solid #ffa040; /* Цвет границы */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 64%;
+}
+
+.save-button:hover {
+    background-color: #ffa040; /* Фон при наведении */
+    color: white; /* Цвет текста при наведении */
+    border-color: #ffa040; /* Цвет границы при наведении */
+}
+
+.like-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.gallery-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.grid4{
+    display: flex;
+    flex-direction: column;
+}
+
+.related-capsules{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.related-title{
+    margin-top: 20px;
+    margin-left: 4%;
+}

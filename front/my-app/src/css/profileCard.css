@@ -1,0 +1,30 @@
+.profile-card{
+    width: 150px;
+    height: 200px;
+    border: 3px solid #f5c134;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#img-profileCard{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.p-userNameCard{
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.a-profileCard{
+    border: 3px solid #f5c134;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: #f5c134;
+    text-decoration: none;
+}
